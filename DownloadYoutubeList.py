@@ -34,12 +34,13 @@ if argv.url:
 
 #Escribri los links en pantalla
 if argv.write:
-	file = open(argv.write, "w")
-	for linea in links:
-		file.write(linea + "\n")
-	file.close()
-else:
-	file = open(file, "w")
-	for linea in links:
-		file.write(linea + "\n")
-	file.close()
+	if argv.output:
+		file = open(argv.output, "w")
+		for linea in links:
+			file.write(linea + "\n")
+		file.close()
+	else:
+		file = open(file, "w")
+		for linea in links:
+			file.write(linea + "\n")
+		file.close()
