@@ -3,6 +3,12 @@
 #
 #				[kuuhaku]
 #Descargar lista de reproduccion en youtube
+#
+#
+#Usted puede copiar, editar, distribuir y hacer lo que quiera
+#con el codigo presente...
+#
+#Leer licencia MIT
 
 import urllib2
 import argparse
@@ -30,6 +36,7 @@ if argv.url:
 		if href in linea:
 			lineas.append(linea)
 	print "[+] Codigo fuente descargado"
+	
 	print "[+] Extrayendo los urls de los videos."
 	links = []
 	for linea in lineas:
