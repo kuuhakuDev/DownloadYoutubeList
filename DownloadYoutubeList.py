@@ -2,13 +2,14 @@
 # -*- coding: utf-8 -*-
 #
 #				[kuuhaku]
+#		  [DownloadYoutubeList]
 #Descargar lista de reproduccion en youtube
 #
 #
 #Usted puede copiar, editar, distribuir y hacer lo que quiera
 #con el codigo presente...
 #
-#Leer licencia MIT
+#Leer licencia
 
 import urllib2
 import argparse
