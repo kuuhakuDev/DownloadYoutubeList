@@ -12,7 +12,8 @@ file = "youtube.txt"
 
 parse = argparse.ArgumentParser()
 parse.add_argument("-u", "--url", help="Introduce la lista de reproduccion a descargar")
-parse.add_argument("-w", "--write", help="Archivo de salida")
+parse.add_argument("-w", "--write", help="Si quieres que los urls de los videos esten en un fichero", action="store_true")
+parse.add_argument("-o", "--output", help="Archivo de salida")
 parse.add_argument("-p", "--program", help="El programa que descargara la lista de reproduccion")
 argv = parse.parse_args()
 
