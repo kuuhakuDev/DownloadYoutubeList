@@ -16,8 +16,15 @@ parse.add_argument("-p", "--program", help="El programa que descargara la lista 
 argv = parse.parse_args()
 
 if argv.url:
+	lineas = []
 	for linea in urllib2.urlopen(argv.url):
 		if href in linea:
-			print linea
+			lineas.append(linea)
 
-	
+	links = []
+	for linea in lineas:
+		index 		= linea.find("href=\"")
+		indexInicio = linea.find("\"", index, len(linea)) + 1
+		indexFin 	= linea.find("&", indexInicio, len(linea)) 
+		links.append(linea[indexInicio:indexFin])
+
